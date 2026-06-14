@@ -1,0 +1,34 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1780944604488,
+      "tag": "0000_far_ulik",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1780946783741,
+      "tag": "0001_demonic_synch",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1781211981460,
+      "tag": "0002_tense_ronan",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1781294313894,
+      "tag": "0003_cool_ego",
+      "breakpoints": true
+    }
+  ]
+}
