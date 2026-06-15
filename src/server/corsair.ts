@@ -1,4 +1,4 @@
-import 'dotenv/config';
+
 
 import { Pool } from 'pg';
 import { drizzle } from 'drizzle-orm/node-postgres';
@@ -6,9 +6,13 @@ import { createCorsair } from 'corsair';
 import { gmail } from '@corsair-dev/gmail';
 import { googlecalendar } from '@corsair-dev/googlecalendar';
 
-const pool = new Pool({
-  connectionString: process.env.DATABASE_URL,
-  ssl: process.env.NODE_ENV === 'production' ? { rejectUnauthorized: false } : false,
+//const pool = new Pool({ connectionString: process.env.DATABASE_URL });
+const pool = new Pool({ 
+  host: 'localhost',
+  port: 5432,
+  database: 'mailflow',
+  user: 'postgres',
+  password: 'kundan123',
 });
 const db = drizzle(pool);
 
